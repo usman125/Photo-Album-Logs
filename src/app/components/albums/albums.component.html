@@ -6,7 +6,7 @@
   <button class="back-btn" (click)="goToHome();">{{'&#10094; Back'}}</button>
   <form action="">
     <div class="inputs-block">
-      <input type="text" name="newAlbumTitle" [(ngModel)]="newAlbumTitle">
+      <input placeholder="Enter title e.g. 124" type="text" name="newAlbumTitle" [(ngModel)]="newAlbumTitle">
       <button (click)="addNewAlbum()" [disabled]="!newAlbumTitle">{{'&#10011; Add new'}}</button>
     </div>
   </form>

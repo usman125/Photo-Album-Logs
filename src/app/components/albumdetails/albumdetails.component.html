@@ -6,7 +6,7 @@
   <button class="back-btn" (click)="goToAlbums();">{{'&#10094; Back'}}</button>
   <form action="">
     <div class="inputs-block">
-      <input type="text" name="newPhotoTitle" [(ngModel)]="newPhotoTitle">
+      <input placeholder="Enter title e.g. 124" type="text" name="newPhotoTitle" [(ngModel)]="newPhotoTitle">
       <button (click)="addNewPhoto()" [disabled]="!newPhotoTitle">{{'&#10011; Add new'}}</button>
     </div>
   </form>
