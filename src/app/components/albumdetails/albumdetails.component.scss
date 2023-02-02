@@ -1,0 +1,82 @@
+.input-box {
+  display: flex;
+  background: #fff;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e7eb;
+  form {
+    width: 100%;
+    .inputs-block {
+      display: flex;
+      width: 100%;
+      input {
+        width: 70%;
+        height: 30px;
+        margin: 0px 10px;
+      }
+      button {
+        width: 30%;
+      }
+    }
+  }
+  .back-btn {
+    width: 10%;
+    font-size: 15px;
+  }
+}
+.album-details {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 10px 10px -5px rgb(0 0 0 / 4%);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  .photo-block {
+    .details {
+      width: 100%;
+      margin: 7px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      margin-bottom: 0px;
+      .title {
+        display: none;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.7);
+        span {
+          color: #fff;
+          padding: 10px;
+          display: block;
+        }
+      }
+      .del-btn {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      img {
+        width: 100%;
+        max-width: 100%;
+        object-fit: contain;
+      }
+      &:hover {
+        .title {
+          display: block;
+        }
+        .del-btn {
+          display: block;
+        }
+      }
+    }
+  }
+}

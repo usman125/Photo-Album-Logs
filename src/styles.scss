@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+$primary_btn_color: #0071e3;
+
+button{
+  background-color: $primary_btn_color;
+  border: #0071e3;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.del-btn{
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+}
+
+form{
+  input{
+    border-radius: 8px;
+  }
+}

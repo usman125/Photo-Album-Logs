@@ -1,0 +1,26 @@
+.logs-list {
+  ul {
+    list-style: none;
+    padding: 0;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    li {
+      cursor: pointer;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #e5e7eb;
+      .info {
+        display: flex;
+        span {
+          margin: 0px 2px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

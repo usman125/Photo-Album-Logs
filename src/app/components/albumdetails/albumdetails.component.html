@@ -1,0 +1,29 @@
+<app-user-details [pageType]="'photo'" [userDetails]="userDetails"></app-user-details>
+
+<h4>Title: {{albumDetails.title}}</h4>
+
+<div class="input-box">
+  <button class="back-btn" (click)="goToAlbums();">{{'&#10094; Back'}}</button>
+  <form action="">
+    <div class="inputs-block">
+      <input type="text" name="newPhotoTitle" [(ngModel)]="newPhotoTitle">
+      <button (click)="addNewPhoto()" [disabled]="!newPhotoTitle">{{'&#10011; Add new'}}</button>
+    </div>
+  </form>
+</div>
+
+<div class="album-details">
+  <div *ngFor="let photo of albumPhotos" class="photo-block" [hidden]="photo.is_deleted">
+    <div class="details">
+      <img alt="" [src]="photo.thumbnailUrl" onError="this.src='/assets/images/dummy.png'" />
+      <div class="title">
+        <span>
+          {{photo.title}}
+        </span>
+      </div>
+      <div class="del-btn">
+        <button class="del-btn" (click)="deletePhoto(photo)">{{'&#128465;'}}</button>
+      </div>
+    </div>
+  </div>
+</div>

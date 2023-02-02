@@ -1,0 +1,8 @@
+<h4>Users</h4>
+<div class="users-list">
+  <ul>
+    <li *ngFor="let user of allUsers;" (click)="goToAlbum(user.id)">
+      <app-user-details [pageType]="'user'" [userDetails]='user'></app-user-details>
+    </li>
+  </ul>
+</div>

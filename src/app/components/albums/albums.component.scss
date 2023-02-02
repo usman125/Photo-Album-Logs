@@ -1,0 +1,54 @@
+.albums-list {
+  ul {
+    list-style: none;
+    padding: 0;
+    // box-shadow: 0 30px 36px -13px rgb(0 0 0 / 10%), 0 10px 10px -5px rgb(0 0 0 / 4%);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    li {
+      cursor: pointer;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #e5e7eb;
+      .info {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+.input-box {
+  display: flex;
+  background: #fff;
+  // box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 10px 10px -5px rgb(0 0 0 / 4%);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e7eb;
+  form {
+    width: 100%;
+    .inputs-block {
+      display: flex;
+      width: 100%;
+      input {
+        width: 70%;
+        height: 30px;
+        margin: 0px 10px;
+      }
+      button {
+        width: 30%;
+      }
+    }
+  }
+  .back-btn {
+    width: 10%;
+    font-size: 15px;
+  }
+}

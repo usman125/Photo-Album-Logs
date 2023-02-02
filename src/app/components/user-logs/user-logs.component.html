@@ -1,0 +1,20 @@
+<h4>User Logs</h4>
+
+<div class="logs-list" *ngIf="allLogs.length !== 0">
+  <ul>
+    <li *ngFor="let log of allLogs;">
+      <div class="info">
+        <span>{{'User ' + log.user.id +' '+ log.user.username}}</span>
+        <span
+          [ngStyle]="{'font-size': log.actionType==='create' ? '20px' : '', 'color':log.actionType==='create' ? 'green' : ''}">{{log.actionType
+          === 'delete' ? ('&#128465;') : ('&#9998;')}}</span>
+        <span>{{log.entryType === 'albums' ? ('an &#128210; width id ' + log.albumId) : ('a &#127966; with id ' +
+          log.photoId)}}</span>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="allLogs.length === 0">
+  No log files yet.
+</div>

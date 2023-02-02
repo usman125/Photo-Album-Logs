@@ -1,0 +1,22 @@
+<div [hidden]="pageType === 'photo'" class="items">
+  <div>
+    Album(s): <span>{{this.allAlbums.length}}</span>
+  </div>
+  <div>
+    Created: <span>{{albumsCreated}}</span>
+  </div>
+  <div>
+    Deleted: <span>{{albumsDeleted}}</span>
+  </div>
+</div>
+<div [hidden]="pageType === 'album'" class="items">
+  <div>
+    Album Photo(s): <span>{{this.allPhotos.length}}</span>
+  </div>
+  <div>
+    Created: <span>{{photosCreated}}</span>
+  </div>
+  <div>
+    Deleted: <span>{{photosDeleted}}</span>
+  </div>
+</div>

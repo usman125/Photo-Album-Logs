@@ -1,0 +1,26 @@
+<app-user-details [pageType]="'album'" [userDetails]="userDetails"></app-user-details>
+
+<h4>Albums</h4>
+
+<div class="input-box">
+  <button class="back-btn" (click)="goToHome();">{{'&#10094; Back'}}</button>
+  <form action="">
+    <div class="inputs-block">
+      <input type="text" name="newAlbumTitle" [(ngModel)]="newAlbumTitle">
+      <button (click)="addNewAlbum()" [disabled]="!newAlbumTitle">{{'&#10011; Add new'}}</button>
+    </div>
+  </form>
+</div>
+
+<div class="albums-list">
+  <ul>
+    <li *ngFor="let album of userAlbums;" (click)="goToAlbum(album)" [hidden]="album.is_deleted">
+      <div class="info" *ngIf="!album.is_deleted">
+        {{album.title}}
+        <div>
+          <button class="del-btn" (click)="deleteAlbum(album)">{{'&#128465;'}}</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

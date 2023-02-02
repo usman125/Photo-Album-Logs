@@ -1,0 +1,18 @@
+<div class="user-header">
+  <div class="user-info" [ngClass]="{'album': pageType === 'album', 'photo': pageType === 'photo'}">
+    <div [ngClass]="{'album': pageType === 'album', 'photo': pageType === 'photo'}" class="type-user">
+      <img alt="" [src]="'/assets/images/dummy.png'" onError="this.src='/assets/images/dummy.png'">
+      <span>{{'&#9731; ' + userDetails.name}}</span>
+      <span>
+        <span class="icon">
+          <!-- {{'&#9993;'}} -->
+          {{'&#128231;'}}
+        </span>
+        {{userDetails.email}}
+      </span>
+    </div>
+  </div>
+  <div class="user-actions" *ngIf="pageType !== 'user'">
+    <app-actions-matrix [pageType]="pageType"></app-actions-matrix>
+  </div>
+</div>

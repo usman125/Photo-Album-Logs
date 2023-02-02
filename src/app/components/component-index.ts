@@ -1,0 +1,6 @@
+export { UsersComponent } from './users/users.component'
+export { AlbumsComponent } from './albums/albums.component'
+export { AlbumdetailsComponent } from './albumdetails/albumdetails.component'
+export { UserDetailsComponent } from './user-details/user-details.component'
+export { ActionsMatrixComponent } from './actions-matrix/actions-matrix.component'
+export { UserLogsComponent } from './user-logs/user-logs.component'
