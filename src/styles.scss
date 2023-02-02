@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 $primary_btn_color: #0071e3;
 
-button{
+button {
   background-color: $primary_btn_color;
   border: #0071e3;
   border-radius: 8px;
@@ -9,15 +9,22 @@ button{
   font-size: 15px;
 }
 
-.del-btn{
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.del-btn {
   background-color: transparent;
   font-size: 20px;
   cursor: pointer;
   color: red;
 }
 
-form{
-  input{
+form {
+  input {
     border-radius: 8px;
   }
 }
