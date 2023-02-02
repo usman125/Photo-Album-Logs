@@ -14,7 +14,7 @@ export class UserDetailsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log("USER DETAILS PAGE:--", this.userDetails, this.pageType);
+    // console.log("USER DETAILS PAGE:--", this.userDetails, this.pageType);
   }
 
 }

@@ -39,18 +39,18 @@ export class ActionsMatrixComponent implements OnInit, OnDestroy {
     this.Subscription.add(
       this._photosStore.state$.subscribe(data => {
         this.allPhotos = data.photos.filter((element: Photo) => !element.is_deleted);
-        console.log("PHOTOS IN ACTION MATRIX:---", this.allPhotos);
+        // console.log("PHOTOS IN ACTION MATRIX:---", this.allPhotos);
       })
     );
     this.Subscription.add(
       this._albumsStore.state$.subscribe(data => {
         this.allAlbums = data.albums.filter((element: Album) => !element.is_deleted);
-        console.log("ALBUMS IN ACTION MATRIX:---", this.allAlbums);
+        // console.log("ALBUMS IN ACTION MATRIX:---", this.allAlbums);
       })
     );
     this.Subscription.add(
       this._userStore.state$.subscribe(data => {
-        console.log("SELECTED USER IN ACTION MATRIX:---", data.user);
+        // console.log("SELECTED USER IN ACTION MATRIX:---", data.user);
         this.userDetails = data.user;
         this.setUserActionsCount();
       })
@@ -92,13 +92,13 @@ export class ActionsMatrixComponent implements OnInit, OnDestroy {
         (element.actionType === 'create')
       )
     )
-    console.log("ALL LOGS IN ACTION MATRIX:---",
-      this.allLogs,
-      userAlbumsDeleted,
-      userAlbumsCreated,
-      userPhotosCreated,
-      userPhotosDeleted,
-    );
+    // console.log("ALL LOGS IN ACTION MATRIX:---",
+    //   this.allLogs,
+    //   userAlbumsDeleted,
+    //   userAlbumsCreated,
+    //   userPhotosCreated,
+    //   userPhotosDeleted,
+    // );
     this.albumsDeleted = userAlbumsDeleted.length;
     this.albumsCreated = userAlbumsCreated.length;
     this.photosCreated = userPhotosCreated.length;

@@ -52,7 +52,7 @@ export class AlbumdetailsComponent implements OnInit, OnDestroy {
     this.Subscription.add(
       this._logsStore.state$.subscribe((data: any) => {
         this.allLogs = data.logs;
-        console.log(this.allLogs)
+        // console.log(this.allLogs)
       })
     );
   }

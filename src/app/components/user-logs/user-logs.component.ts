@@ -19,7 +19,7 @@ export class UserLogsComponent implements OnInit {
     this.Subscritpion.add(
       this._logsStore.state$.subscribe((data: any) => {
         this.allLogs = data.logs;
-        console.log("ALL LOGS IN LOG PAGE:--", this.allLogs);
+        // console.log("ALL LOGS IN LOG PAGE:--", this.allLogs);
       })
     )
   }
