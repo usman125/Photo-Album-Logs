@@ -1,6 +1,8 @@
 # PhotoAlbum
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+## Setting up the repository
+
+Pull the code repository. Run `npm i` or `npm install` 
 
 ## Development server
 
